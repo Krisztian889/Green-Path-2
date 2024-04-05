@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background-color: #4caf50;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+p.reduce {
+color: aliceblue;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3e4149;
+  }
+  .navbar-toggler,
+  .navbar-brand {
+    z-index: 1;
+  }
+  .navbar-brand {
+    font-size: 1.8em;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .nav-link.active {
+    color: darkseagreen;
+  }
+  .nav-item:not(:last-child) {
+    border-bottom: 1px solid gray;
+    padding: 0.2em 4em;
+  }
+  @media screen and (min-width: 768px) {
+    .nav-item:not(:last-child) {
+      padding: 0.5em 8em;
+    }
+  }
+  .navbar-collapse.show {
+    transition: all 0.5s;
+  }
+
+  
+  .hero-section {
+    background: url("./image/i2.jpeg")
+      no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: aliceblue;
+    margin-bottom: 200px;
+  }
+
+  div.container-1 {
+    margin-top: 40px;
+  }
+
+
+  div.container.py-6 {
+    margin-bottom: 200px;
+  }
+  /* This is newsletter section */
+
+  .py-3.py-md-5.py-xl-10 {
+    margin-bottom: 100px; /* Adjust the value as needed */
+}
+
+
+  /* This is footer section */
+
+  section.footer {
+    background-color: #3E4148;
+    color: aliceblue;
+  }
+
+  .footer-links-list ul { 
+    padding-left:0 
+  }
+
+	.footer-links-list ul li {
+    margin-bottom:15px; list-style-type:none;padding-left:0 
+  }
+
+	.footer-links-list a {text-decoration:none; color: aliceblue;
+  }
+
+  p.copyright {
+    font-size: 15px;
+  }
+
+
+
+.btn.btn-primary {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.btn-primary:hover {
+  background-color: #4CAF4F;
+  border-color: #4caf4f;
+  color: aliceblue; 
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: #4CAF4F;
+    border-color: #4caf4f;
+    color: aliceblue; 
+}
+
+a {
+  color:aliceblue;
+}
+
+img.img-fluid {
+  margin-top: 40px; 
+}
+
+h1 {
+   color: aliceblue;
+   font-size: 75px;
+   padding-top: 200px;
+   text-shadow: 100px;
+   font-weight: 100px;
+  }
+
+h4 {
+  color: aliceblue;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  color: aliceblue;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h6 {
+  color: aliceblue;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#email-newsletter-help {
+  color:aliceblue;
+  font-size: 16px;
+}
+
+.btn.btn-primary.bsb-btn-3xl {
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  color: aliceblue;
+}
+
+.btn.btn-primary.bsb-btn-3xl:hover {
+  background-color: aliceblue;
+  color: #4CAF4F;
+  font-weight: 300;
+}
+
+ p {
+    padding-top: 50px;
+    font-size: 20px;
+ } 
+
+  .div.row.align-items-center {
+    background-color: #4caf50;
+  }
+
+  .div.container-fluid {
+    background-color: #4caf50;
+  }
+
+
+  a.btn.btn-primary.mt-2 {
+    background-color: transparent;
+    border-color: aliceblue;
+    
+  }
+
+  a.btn.btn-outline-primary.mt-2 {
+    border-color: aliceblue;
+    color: aliceblue;
+  }
+
+  a.btn.btn-outline-primary.mt-2.success:hover {
+    background-color: aliceblue;
+    color: black;
+  }
+
+  a.btn.btn-primary.btn-lg.px-4.gap-3 {
+    background-color: transparent;
+    border-color: aliceblue;
+  }
+
+  a.btn.btn-outline-secondary.btn-lg.px-4 {
+    border-color: aliceblue;
+    color: aliceblue;
+  }
+
+  a.btn.btn-primary.px-4.me-md-2 {
+    background-color: transparent;
+    border-color: aliceblue;
+  }
+
+  a.btn.btn-outline-secondary.px-4 {
+    border-color: aliceblue;
+    color: aliceblue;
+  }
+
+
+  section.bg-dark.text-light.p {
+    font-size: 10px;
+  }
+
+.special-text {
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.lc-block h2 {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.lc-block p {
+  margin-bottom: 20px; /* Adjust as needed */
+}

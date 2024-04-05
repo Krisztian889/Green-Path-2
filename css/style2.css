@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background-color: #4caf50;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3e4149;
+  }
+  .navbar-toggler,
+  .navbar-brand {
+    z-index: 1;
+  }
+  .navbar-brand {
+    font-size: 1.8em;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .nav-link.active {
+    color: darkseagreen;
+  }
+  .nav-item:not(:last-child) {
+    border-bottom: 1px solid gray;
+    padding: 0.2em 4em;
+  }
+  @media screen and (min-width: 768px) {
+    .nav-item:not(:last-child) {
+      padding: 0.5em 8em;
+    }
+  }
+  .navbar-collapse.show {
+    transition: all 0.5s;
+  }
+
+h1.display-6.fw-bolder.text-center {
+  margin-bottom: 50px;
+  font-size: 70px;
+}
+
+h1.display-2.fw-bold {
+  color: aliceblue;
+}
+
+div.p-5.mb-4.lc-block {
+  background-color: #4caf50;
+}
+
+p.reduce {
+  color: aliceblue;
+}
+
+p.text-1 {
+color: aliceblue;
+}
+
+h5.text-center {
+  font-size: 30px;
+}
+
+.container h5 {
+  font-size: 30px; /* Adjust the font size as needed */
+}
+
+
+.btn.btn-outline-primary.mt-2 {
+  border-color: aliceblue;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.btn.btn-outline-primary.mt-2:hover {
+  background-color: forestgreen; 
+  color: #fff;
+  
+}
+
+div.row.mb-4.align-items-center {
+margin-bottom: 50px;
+
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+  /* This is footer section */
+
+  section.footer {
+    background-color: #3E4148;
+    color: aliceblue;
+  }
+
+  .footer-links-list ul { 
+    padding-left:0 
+  }
+
+	.footer-links-list ul li {
+    margin-bottom:15px; list-style-type:none;padding-left:0 
+  }
+
+	.footer-links-list a {text-decoration:none; color: aliceblue;
+  }
+
+  p.copyright {
+    font-size: 15px;
+  }
+
+  div.container {
+    margin-top: 150px;
+  }
+
+  button.btn.btn-primary.bsb-btn-3xl {
+    background-color: transparent;
+    border-color: aliceblue;
+  }
+
+  #email-newsletter-help {
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.card {
+  border: 2px solid aliceblue; /* Change the border size and color as needed */
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  background-color: #4caf50;
+  color: aliceblue;
+}

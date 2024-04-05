@@ -1,0 +1,267 @@
+<!-- HTML Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="Green Path" content="Digital Carbon Footprint, enviroument issues">
+    <meta name="keywords" content="CO2, electric devices, mobile, tablets, Scotland, Edinburgh, enviroument awareness">
+    <meta name="author" content="Krisztian Skakic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Path</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+
+</head>
+<body>
+
+
+<!-- Navigation Section Starts -->
+
+<nav class="navbar fixed-top" data-bs-theme="dark">
+	<div class="container-fluid">
+	  <a class="navbar-brand fw-bold" href="index.html">Green Path</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav5" aria-controls="navbarNav5" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav5">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Calculate Carbon</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="carbontips.html">Carbon Tips</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="sustainability.html">Sustainability</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">About Us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact.html">Contact</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+
+<!-- Calculator Section Starts -->
+
+<!-- Computer Devices Section -->
+<div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Computer Devices</h2>
+                    <!-- Image for computer -->
+                    <img src="./image/computer1.jpg" class="card-img-top mb-3" alt="Computer">
+                    <!-- Input fields for computer usage -->
+                    <div class="mb-3">
+                        <label for="dailyComputerUsage" class="form-label">Hours of computer usage per day:</label>
+                        <input type="number" class="form-control" id="dailyComputerUsage" placeholder="Enter hours">
+                    </div>
+                    <div class="mb-3">
+                        <label for="weeklyComputerUsage" class="form-label">Hours of computer usage per week:</label>
+                        <input type="number" class="form-control" id="weeklyComputerUsage" placeholder="Enter hours">
+                    </div>
+                    <div class="mb-3">
+                        <label for="monthlyComputerUsage" class="form-label">Hours of computer usage per month:</label>
+                        <input type="number" class="form-control" id="monthlyComputerUsage" placeholder="Enter hours">
+                    </div>
+                    <!-- Button to calculate computer carbon footprint -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-primary mt-2" onclick="calculateComputerCarbonFootprint()">Calculate</button>
+                    </div>
+                    <!-- Result section for computer carbon footprint -->
+                    <div id="computerResult" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Devices Section -->
+<div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Mobile Devices</h2>
+                    <!-- Image for mobile devices -->
+                    <img src="./image/mobile1.jpg" class="card-img-top mb-3" alt="Mobile">
+                    <!-- Input fields for mobile usage -->
+                    <div class="mb-3">
+                        <label for="dailyMobileUsage" class="form-label">Hours of mobile usage per day:</label>
+                        <input type="number" class="form-control" id="dailyMobileUsage" placeholder="Enter hours">
+                    </div>
+                    <div class="mb-3">
+                        <label for="weeklyMobileUsage" class="form-label">Hours of mobile usage per week:</label>
+                        <input type="number" class="form-control" id="weeklyMobileUsage" placeholder="Enter hours">
+                    </div>
+                    <div class="mb-3">
+                        <label for="monthlyMobileUsage" class="form-label">Hours of mobile usage per month:</label>
+                        <input type="number" class="form-control" id="monthlyMobileUsage" placeholder="Enter hours">
+                    </div>
+                    <!-- Button to calculate mobile carbon footprint -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-primary mt-2" onclick="calculateMobileCarbonFootprint()">Calculate</button>
+                    </div>
+                    <!-- Result section for mobile carbon footprint -->
+                    <div id="mobileResult" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tablet Devices Section -->
+<div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Tablet Devices</h2>
+                    <!-- Image for tablet devices -->
+                    <img src="./image/tablet1.jpg" class="card-img-top mb-3" alt="Tablet">
+                    <!-- Input fields for tablet usage -->
+                    <div class="mb-3">
+                        <label for="dailyTabletUsage" class="form-label">Hours of tablet usage per day:</label>
+                        <input type="number" class="form-control" id="dailyTabletUsage" placeholder="Enter hours">
+                    </div>
+                    <div class="mb-3">
+                        <label for="weeklyTabletUsage" class="form-label">Hours of tablet usage per week:</label>
+                        <input type="number" class="form-control" id="weeklyTabletUsage" placeholder="Enter hours">
+                    </div>
+                    <div class="mb-3">
+                        <label for="monthlyTabletUsage" class="form-label">Hours of tablet usage per month:</label>
+                        <input type="number" class="form-control" id="monthlyTabletUsage" placeholder="Enter hours">
+                    </div>
+                    <!-- Button to calculate tablet carbon footprint -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-primary mt-2" onclick="calculateTabletCarbonFootprint()">Calculate</button>
+                    </div>
+                    <!-- Result section for tablet carbon footprint -->
+                    <div id="tabletResult" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+  
+	
+			
+	
+ 
+  
+
+<!--Footer Section Starts-->       
+<section class="footer">
+	<div class="container">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+			<div class="col mb-3">
+				<div class="lc-block mb-3"><a class="navbar-brand" href="https://library.livecanvas.com/sections/">
+						<img class="img-fluid me-1" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="my brand" width="48px" height="48px" lc-helper="image">
+					</a></div>
+				<div class="lc-block">
+					<div editable="rich">
+
+						<p class="copyright">© 2024 Green Path, Krisztian Web Design</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col offset-md-2 mb-3">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h4>Get Started</h4>
+					</div>
+				</div>
+				<!-- /lc-block -->
+				<div class="lc-block small"> <style>
+          </style>
+					<div editable="rich" class="footer-links-list">
+
+						<ul>
+							<li><a href="#">Calculate Carbon</a> </li>
+							<li><a href="#">Carbon Tips</a></li>
+							<li><a href="#">Sustainability</a> </li>
+						</ul>
+
+					</div>
+				</div>
+				<!-- /lc-block -->
+			</div>
+			<div class="col mb-3">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h4>About us</h4>
+					</div>
+				</div>
+				<!-- /lc-block -->
+				<div class="lc-block small">
+					<div editable="rich" class="footer-links-list">
+
+						<ul>
+							<li><a href="#">Introduction</a> </li>
+							<li><a href="#">Our Mission</a></li>
+							<li><a href="#"></a>What We Do</a> </li>
+							<li><a href="#">Why it Matters</a> </li>
+						</ul>
+
+					</div>
+				</div>
+				<!-- /lc-block -->
+			</div>
+			<div class="col mb-3">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h4>Contact</h4>
+					</div>
+				</div>
+				<!-- /lc-block -->
+				<div class="lc-block small">
+					<div editable="rich" class="footer-links-list">
+
+						<ul>
+							<li><a href="#">United Kingdom</a> </li>
+							<li><a href="#">Edinburgh</a> </li>
+							<li><a href="#">Leith</a> </li>
+							<li><a href="#">Contact Us</a> </li>
+						</ul>
+
+					</div>
+				</div>
+				<!-- /lc-block -->
+			</div>
+		</div>
+	</div>
+</section>  
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/script2.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+</html>
+
+    
+
+
+
+    
